@@ -4,6 +4,8 @@ import FighterCard from "./components/FighterCard/FighterCards";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import fighters from "./fighters.json";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function randomFighters(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -41,10 +43,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        
         <Title>Street Fighter II Click Game</Title>
         <Title><h1>Your Score:{this.state.score}</h1></Title>
-        {/* <h2>{this.props.name}</h2> */}
-        {/* <button onClick={this.score}>+1</button> */}
         {this.state.fighters.map(fighters => (
           <FighterCard
             id={fighters.id}
