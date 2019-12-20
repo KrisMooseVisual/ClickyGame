@@ -23,17 +23,45 @@ class App extends Component {
     message: "Click on your fighters to start but, don't click the same fighters more than once! Good luck!"
   };
 
-  // fighters = id => {
-  //   if (!this.state.gameover) {
-  //     if (this.state.fighters(id) === -1) {
-  //       this.increment();
-  //       this.setState({ fighters: [...this.state.fighters, id] });
-  //     } else {
-  //       this.setState({ message: 'Game Over', gameover: true })
-  //       this.reset();
-  //     }
-  //   }
-  // }
+  fighters = id => {
+    const newFighters = this.state.fighters.map(fighter => {
+      if(fighter.id === id) {
+        if(fighter.clicked === false) {
+          // if it hasn't been clicked, set clicked to true
+          fighter.clicked = true;
+        } else {
+          // otherwise, this has been clicked already
+          // you lose the game! reset the game
+
+        }
+      }
+
+      return fighter;
+    });
+
+    console.log(newFighters);
+
+    this.setState({
+      fighters: newFighters,
+      score: this.state.score + 1
+    }, function() {
+      if(this.state.score > 11) {
+        // you win!! reset the game. otherwise keep playing
+        alert("YOu win!");
+      }
+    });
+
+    this.randomizeFighters();
+    // if (!this.state.gameover) {
+    //   if (this.state.fighters(id) === -1) {
+    //     this.increment();
+    //     this.setState({ fighters: [...this.state.fighters, id] });
+    //   } else {
+    //     this.setState({ message: 'Game Over', gameover: true })
+    //     this.reset();
+    //   }
+    // }
+  }
 
   randomizeFighters = () => {
     const shuffled = randomFighters(fighters);
@@ -52,7 +80,9 @@ class App extends Component {
             key={fighters.id}
             name={fighters.name}
             image={fighters.image}
-            randomizeFighters={this.randomizeFighters} />
+            randomizeFighters={this.randomizeFighters}
+            fighters={this.fighters}
+            />
         ))}
       </Wrapper>
     );

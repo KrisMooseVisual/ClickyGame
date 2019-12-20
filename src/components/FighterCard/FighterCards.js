@@ -8,8 +8,7 @@ import "./style.css";
 const FighterCards = props => (
   <div 
   id={props.name}
-  onClick={props.onClick}
-  onClick={() => props.randomizeFighters(props.key)} className="card col-md-3">
+  onClick={() => props.fighters(props.id)} className="card col-md-3">
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
