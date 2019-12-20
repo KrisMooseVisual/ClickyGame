@@ -2,74 +2,74 @@
   {
     "id": 1,
     "name": "Ryu",
-    "image": "https://i.ibb.co/WySCNBq/1Ryu.jpg",
+    "image": "./assets/img/1Ryu.jpg",
     "clicked": false
     
   },
   {
     "id": 2,
     "name": "Ken",
-    "image": "https://i.ibb.co/c3Wvcwg/2Ken.jpg",
+    "image": "./assets/img/2Ken.jpg",
     "clicked": false
   },
   {
     "id": 3,
     "name": "E.Honda",
-    "image": "https://i.ibb.co/Nx0SPmH/3Honda.jpg",
+    "image": "./assets/img/3Honda.jpg",
     "clicked": false
   },
   {
     "id": 4,
     "name": "Chun Li",
-    "image": "https://i.ibb.co/71CYgk3/4ChunLi.jpg",
+    "image": "./assets/img/4ChunLi.jpg",
     "clicked": false
   },
   {
     "id": 5,
     "name": "Blanka",
-    "image": "https://i.ibb.co/Hdk1Nvg/5Blanka.jpg",
+    "image": "./assets/img/5Blanka.jpg",
     "clicked": false
   },
   {
     "id": 6,
     "name": "Zangief",
-    "image": "https://i.ibb.co/9wprzSv/6Zangief.jpg",
+    "image": "./assets/img/6Zangief.jpg",
     "clicked": false
   },
   {
     "id": 7,
     "name": "Guile",
-    "image": "https://i.ibb.co/TvZjQFm/7Guile.jpg",
+    "image": "./assets/img/7Guile.jpg",
     "clicked": false
   },
   {
     "id": 8,
     "name": "Dhalsim",
-    "image": "https://i.ibb.co/yX315yp/8Dhalsim.jpg",
+    "image": "./assets/img/8Dhalsim.jpg",
     "clicked": false
   },
   {
     "id": 9,
     "name": "Balrog",
-    "image": "https://i.ibb.co/X8GjXXw/9Balrog.jpg",
+    "image": "./assets/img/9Balrog.jpg",
     "clicked": false
   },
   {
     "id": 10,
     "name": "Sagat",
-    "image": "https://i.ibb.co/Y2p0q9d/10Sagat.jpg",
+    "image": "./assets/img/10Sagat.jpg",
     "clicked": false
   },
   {
     "id": 11,
     "name": "Vega",
-    "image": "https://i.ibb.co/MfkdBt0/11Vega.jpg",
+    "image": "./assets/img/11Vega.jpg",
     "clicked": false
   },
   {
     "id": 12,
     "name": "M. Bison",
-    "image": "https://i.ibb.co/hs8N4fW/12Bison.jpg",
+    "image": "./assets/img/12Bison.jpg",
     "clicked": false
   }
 ]

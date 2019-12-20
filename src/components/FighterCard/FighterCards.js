@@ -1,28 +1,17 @@
 
 import React from "react";
 import "./style.css";
+// import fighters from "./fighters.json";
 
 
-const FighterCards = props => {
-  return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-        </ul>
-        <span onClick={() => props.removeFighter(props.id)} className="card">
-        <button>Choose</button>
-      </span>
-      </div>
-      {/* <span onClick={() => Math.floor(Math.random(13), className="card"> 
-      </span> */}
+
+const FighterCards = props => (
+  <div onClick={() => props.setClicked(props.id)} className="card col-md-3">
+    <div className="img-container">
+      <img alt={props.name} src={props.image} />
     </div>
-  );
-}
+  </div>
+);
+
 
 export default FighterCards;
