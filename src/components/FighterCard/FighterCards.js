@@ -9,7 +9,7 @@ const FighterCards = props => (
   <div 
   id={props.name}
   onClick={props.onClick}
-  onClick={() => props.onClick(props.name)} className="card col-md-3">
+  onClick={() => props.randomizeFighters(props.key)} className="card col-md-3">
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>

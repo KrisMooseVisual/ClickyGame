@@ -51,7 +51,6 @@ class App extends Component {
             key={fighters.id}
             name={fighters.name}
             image={fighters.image}
-            onClick={this.onClick}
             randomizeFighters={this.randomizeFighters} />
         ))}
       </Wrapper>
