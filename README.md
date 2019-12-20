@@ -1,1 +1,2 @@
-# ClickyGame
+# Street Fighter II: ClickyGame 
+* In this homework, the user is asked to click on different characters without repeating clicking the same character. Each time the person clicks, the character cards are shuffed.

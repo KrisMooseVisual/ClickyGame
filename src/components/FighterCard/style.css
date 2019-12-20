@@ -1,10 +1,6 @@
 .card {
   background: rgb(0, 0, 0);
-  /* border-radius: 2px; */
-  /* height: 325px; */
   margin: 1rem;
-  /* position: relative; */
-  /* width: 325px; */
   box-shadow: 0 0px 18px rgb(231, 235, 5), 0 2px 4px #999;
   text-align: left;
 }
@@ -19,29 +15,3 @@
   width: 50%
 }
 
-.card > .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 15px;
-}
-
-/* .card > .content > ul {
-  list-style-type: none;
-} */
-
-/* .card > .content > ul > li {
-  margin-top: 18px;
-} */
-
-/* .card > .remove {
-  color: #ff1744;
-  font-size: 48px;
-  position: absolute;
-  top: -20px;
-  right: 5px;
-  cursor: pointer;
-}
-
-.card > .remove:hover {
-  color: #d50000;
-} */

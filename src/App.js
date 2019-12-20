@@ -21,17 +21,17 @@ class App extends Component {
     message: "Click on your fighters to start but, don't click the same fighters more than once! Good luck!"
   };
 
-  fighters = id => {
-    if (!this.state.gameover) {
-      if (this.state.fighters(id) === -1) {
-        this.increment();
-        this.setState({ fighters: [...this.state.fighters, id] });
-      } else {
-        this.setState({ message: 'Game Over', gameover: true })
-        this.reset();
-      }
-    }
-  }
+  // fighters = id => {
+  //   if (!this.state.gameover) {
+  //     if (this.state.fighters(id) === -1) {
+  //       this.increment();
+  //       this.setState({ fighters: [...this.state.fighters, id] });
+  //     } else {
+  //       this.setState({ message: 'Game Over', gameover: true })
+  //       this.reset();
+  //     }
+  //   }
+  // }
 
   randomizeFighters = () => {
     const shuffled = randomFighters(fighters);
