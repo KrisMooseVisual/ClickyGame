@@ -14,31 +14,45 @@ function randomFighters(array) {
 };
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+
   state = {
     fighters: fighters,
     score: 0,
-    winScore: 12,
     message: "Click on your fighters to start but, don't click the same fighters more than once! Good luck!"
   };
 
-  shuffleFighters = () => {
+  fighters = id => {
+    if (!this.state.gameover) {
+      if (this.state.fighters(id) === -1) {
+        this.increment();
+        this.setState({ fighters: [...this.state.fighters, id] });
+      } else {
+        this.setState({ message: 'Game Over', gameover: true })
+        this.reset();
+      }
+    }
+  }
+
+  randomizeFighters = () => {
     const shuffled = randomFighters(fighters);
     this.setState({ fighters: shuffled });
   }
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
-        <Title>Street Fighter Contestants</Title>
+        <Title>Street Fighter II Click Game</Title>
+        <Title><h1>Your Score:{this.state.score}</h1></Title>
+        {/* <h2>{this.props.name}</h2> */}
+        {/* <button onClick={this.score}>+1</button> */}
         {this.state.fighters.map(fighters => (
           <FighterCard
             id={fighters.id}
             key={fighters.id}
             name={fighters.name}
             image={fighters.image}
-            shuffleFighters={this.shuffleFighters}/>
+            onClick={this.onClick}
+            randomizeFighters={this.randomizeFighters} />
         ))}
       </Wrapper>
     );

@@ -1,12 +1,15 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 
 import React from "react";
 import "./style.css";
-// import fighters from "./fighters.json";
 
 
 
 const FighterCards = props => (
-  <div onClick={() => props.setClicked(props.id)} className="card col-md-3">
+  <div 
+  id={props.name}
+  onClick={props.onClick}
+  onClick={() => props.onClick(props.name)} className="card col-md-3">
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
